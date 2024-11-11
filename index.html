@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering NYC Youth in Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Empowering NYC Youth in Technology</h1>
+        <p>Bridging the digital divide through Coding, Cyber Security, and Cryptocurrency education.</p>
+    </header>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>We aim to provide underprivileged students in NYC with the skills and mentorship needed for future tech careers.</p>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <div class="program">
+            <h3>Coding</h3>
+            <p>Learn foundational and advanced programming skills, from HTML and CSS to JavaScript and Python.</p>
+        </div>
+        <div class="program">
+            <h3>Cyber Security</h3>
+            <p>Understand online safety, data protection, and strategies to protect against cyber threats.</p>
+        </div>
+        <div class="program">
+            <h3>Cryptocurrency</h3>
+            <p>Explore cryptocurrency basics, blockchain, and financial literacy for the future of finance.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a first-generation American from Brooklyn, I’m dedicated to providing students with the mentorship and skills I wish I’d had growing up. With experience in Cyber Security, Systems Administration, and Software Development, I bring expertise and passion to empower NYC youth.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="contact-message"></div> <!-- Placeholder for success/error messages -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechEdNYC. Empowering NYC Youth in Technology.</p>
+    </footer>
+
+    <!-- Updated EmailJS and Custom Script -->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("wT0FcGCXoBgwEqkB_"); // Initialize with your actual public key
+       })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
